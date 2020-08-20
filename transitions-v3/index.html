@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Basic Vue App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <button @click="toggleBox">Toggle Box</button>
+      <transition name="box-fade">
+        <div class="box" v-if="isVisible">
+          <h2>I'm sometimes visible!</h2>
+        </div>
+      </transition>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

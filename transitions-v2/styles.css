@@ -1,0 +1,32 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  text-align: center;
+  margin: 5rem;
+}
+
+.box {
+  margin: 3rem auto;
+  max-width: 40rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 2rem;
+}
+
+.box-fade-enter,
+.box-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.box-fade-enter-active,
+.box-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.box-fade-enter-to,
+.box-fade-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
