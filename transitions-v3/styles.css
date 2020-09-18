@@ -14,7 +14,7 @@ body {
   padding: 2rem;
 }
 
-.box-fade-enter,
+.box-fade-enter-from,
 .box-fade-leave-to {
   opacity: 0;
   transform: translateY(-30px);
@@ -26,7 +26,7 @@ body {
 }
 
 .box-fade-enter-to,
-.box-fade-leave {
+.box-fade-leave-from {
   opacity: 1;
   transform: translateY(0);
 }
